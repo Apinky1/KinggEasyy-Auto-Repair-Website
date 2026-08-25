@@ -1,0 +1,225 @@
+:root {
+    --color-primary: #171717;
+    --color-secondary: #ffffff;
+    --color-accent: #f84800;
+    --color-accent-dark: #c93b00;
+    --color-background: #f6f6f6;
+    --color-text: #202020;
+    --color-muted: #666666;
+    --color-metal: #a3a3a3;
+
+    --max-width: 1200px;
+    --border-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid #e4e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    min-height: 78px;
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 82px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(19, 27, 35, 0.92) 0%,
+            rgba(19, 27, 35, 0.78) 45%,
+            rgba(19, 27, 35, 0.40) 100%
+        ),
+        url("../images/hero-shop.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 90px 24px;
+
+    color: var(--color-secondary);
+}
+
+.hero-content > * {
+    max-width: 680px;
+}
+
+.hero-label {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.6rem);
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    color: #e5e7eb;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.primary-button {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: var(--color-accent-dark);
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        min-height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 560px;
+
+        background:
+            linear-gradient(
+                rgba(19, 27, 35, 0.86),
+                rgba(19, 27, 35, 0.86)
+            ),
+            url("../images/hero-shop.jpg");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 70px 22px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+}

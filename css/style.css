@@ -87,7 +87,8 @@ nav {
 /* HERO */
 
 .hero {
-    min-height: 620px;
+    min-height: 610px;
+    padding: 90px 24px;
 
     display: flex;
     align-items: center;
@@ -95,14 +96,17 @@ nav {
     background:
         linear-gradient(
             90deg,
-            rgba(19, 27, 35, 0.92) 0%,
-            rgba(19, 27, 35, 0.78) 45%,
-            rgba(19, 27, 35, 0.40) 100%
+            rgba(25, 31, 36, 0.94) 0%,
+            rgba(25, 31, 36, 0.82) 45%,
+            rgba(25, 31, 36, 0.40) 100%
         ),
-        url("../images/hero-shop.jpg");
+        url("../images/services/shop-work.jpg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
 }
 
 .hero-content {

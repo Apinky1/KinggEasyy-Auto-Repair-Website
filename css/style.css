@@ -227,3 +227,10 @@ nav {
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+    .hero {
+        background-position: 62% center;
+        min-height: 700px;
+        padding: 80px 24px;
+    }
+}

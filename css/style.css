@@ -229,7 +229,17 @@ nav {
 }
 @media (max-width: 768px) {
     .hero {
-        background-position: 62% center;
+        background:
+            linear-gradient(
+                rgba(25, 31, 36, 0.78),
+                rgba(25, 31, 36, 0.78)
+            ),
+            url("../images/services/shop-work.jpg");
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
         min-height: 700px;
         padding: 80px 24px;
     }

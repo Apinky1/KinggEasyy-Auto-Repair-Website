@@ -1,16 +1,20 @@
+
 :root {
-    --color-primary: #171717;
+    /* KinggEasyy Graphite & Chrome Palette */
+    --color-primary: #171b1f;
     --color-secondary: #ffffff;
     --color-accent: #f84800;
     --color-accent-dark: #c93b00;
-    --color-background: #f6f6f6;
-    --color-text: #202020;
-    --color-muted: #666666;
-    --color-metal: #a3a3a3;
+    --color-background: #f4f6f7;
+    --color-text: #252b30;
+    --color-muted: #5f6972;
+    --color-metal: #a3adb5;
 
+    /* Layout */
     --max-width: 1200px;
     --border-radius: 12px;
 }
+
 
 * {
     box-sizing: border-box;
@@ -37,8 +41,8 @@ a {
 /* HEADER */
 
 header {
-    background-color: var(--color-secondary);
-    border-bottom: 1px solid #e4e7eb;
+    background-color: #1a1f23;
+    border-bottom: 2px solid #f84800;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -61,7 +65,7 @@ nav {
 }
 
 .logo img {
-    height: 82px;
+    height: 78px;
     width: auto;
     display: block;
 }
@@ -76,7 +80,7 @@ nav {
 .nav-links a {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: white;
     transition: color 0.2s ease;
 }
 
@@ -87,8 +91,8 @@ nav {
 /* HERO */
 
 .hero {
-    min-height: 610px;
-    padding: 90px 24px;
+    min-height: 500px;
+    padding: 35px 24px;
 
     display: flex;
     align-items: center;
@@ -113,7 +117,7 @@ nav {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 90px 24px;
+    padding: 35px 24px;
 
     color: var(--color-secondary);
 }
@@ -133,7 +137,7 @@ nav {
 
 .hero h1 {
     font-size: clamp(2.5rem, 5vw, 4.6rem);
-    line-height: 1.05;
+    line-height: 1.15;
     margin-bottom: 22px;
 }
 
@@ -209,7 +213,7 @@ nav {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero-description {
@@ -236,8 +240,8 @@ nav {
         background-position: center;
         background-repeat: no-repeat;
 
-        min-height: 700px;
-        padding: 80px 24px;
+       min-height: 420px;
+       padding: 45px 24px;
     }
 }
 
@@ -398,7 +402,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: var(--color-primary);
+    color: #ffffff;
     font-size: 30px;
     cursor: pointer;
 }
@@ -446,11 +450,24 @@ nav {
    SERVICES PAGE
 ========================= */
 
+
 .services-hero {
-    background-color: #1a1f23;
-    color: white;
+    background-color: #f3f0ea;
+    color: #1a1f23;
     padding: 90px 24px;
+    border-bottom: 3px solid #f84800;
 }
+
+
+/* Services Hero Text Colors */
+.services-hero h1 {
+    color: #1a1f23;
+}
+
+.services-hero .services-intro {
+    color: #4b5563;
+}
+
 
 .services-hero-content {
     max-width: 1200px;

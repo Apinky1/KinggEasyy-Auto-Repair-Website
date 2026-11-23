@@ -452,9 +452,9 @@ nav {
 
 
 .services-hero {
-    background-color: #f3f0ea;
-    color: #1a1f23;
-    padding: 90px 24px;
+    background-color: #252b30;
+    color: #ffffff;
+    padding: 45px 24px;
     border-bottom: 3px solid #f84800;
 }
 
@@ -610,5 +610,206 @@ nav {
     .service-card {
         min-height: auto;
         padding: 24px;
+    }
+}
+
+/* Temporary homepage header adjustment */
+.logo img {
+    display: none;
+}
+
+/* Services Page - Graphite & Chrome */
+.services-hero h1 {
+    color: #ffffff;
+}
+
+.services-hero .services-intro {
+    color: #d8dde2;
+}
+
+.services-hero .services-label {
+    color: #ff642b;
+}
+
+
+/* =========================
+   ABOUT PAGE
+   Graphite & Chrome
+========================= */
+
+/* About Page Header */
+nav > a.logo {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+/* Shared About Layout */
+.about-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.about-eyebrow {
+    color: #f84800;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* About Hero */
+.about-hero {
+    background: linear-gradient(120deg, #171b1f, #303840);
+    color: #ffffff;
+    padding: 65px 24px;
+    border-bottom: 3px solid #f84800;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    line-height: 1.12;
+    max-width: 850px;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+}
+
+.about-hero .about-container > p:last-child {
+    color: #d8dde2;
+    font-size: 1.1rem;
+    max-width: 720px;
+}
+
+/* Founder Section */
+.about-founder {
+    background-color: #f4f6f7;
+    padding: 85px 24px;
+}
+
+.about-founder-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-founder-copy h2,
+.about-business-copy h2 {
+    color: #171b1f;
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-founder-copy h3 {
+    color: #303840;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.about-founder-copy > p:not(.about-eyebrow),
+.about-business-copy > p:not(.about-eyebrow) {
+    color: #4b5563;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+/* Ian's Portrait */
+.about-founder-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    border-bottom: 5px solid #f84800;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.about-founder-photo img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+/* Business Story Section */
+.about-business {
+    background-color: #ffffff;
+    padding: 85px 24px;
+}
+
+.about-business-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+/* Shop Sign Photograph */
+.about-business-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+.about-business-photo img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Contact Button */
+.about-cta {
+    display: inline-block;
+    background-color: #f84800;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.about-cta:hover {
+    background-color: #c93b00;
+}
+
+/* About Page Mobile Layout */
+@media (max-width: 768px) {
+
+    .about-hero {
+        padding: 45px 22px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-founder,
+    .about-business {
+        padding: 55px 22px;
+    }
+
+    .about-founder-grid,
+    .about-business-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-founder-photo img {
+        height: 430px;
+    }
+
+    .about-business-photo img {
+        height: 310px;
+    }
+
+    .about-founder-copy h2,
+    .about-business-copy h2 {
+        font-size: 2rem;
     }
 }
